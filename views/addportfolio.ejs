@@ -1,0 +1,78 @@
+<%- include('partials/_header') %>
+
+<form method="POST" action="/users" enctype="multipart/form-data">
+  <h1
+    class="text-center mt-5 mb-4 text-success"
+    style="font-family: 'Oswald', serif; font-style: italic"
+  >
+    ADD PORTFOLIO
+  </h1>
+  <!-- Name input-->
+  <div class="container align-items:center; justify-content:center;">
+    <div class="form-floating mb-3">
+      <input
+        class="form-control"
+        name="name"
+        id="name"
+        type="text"
+        placeholder="Enter your name..."
+      />
+      <label for="name">Full name</label>
+    </div>
+    <!-- Email address input-->
+    <div class="form-floating mb-3">
+      <input
+        class="form-control"
+        id="email"
+        name="email"
+        type="email"
+        placeholder="name@example.com"
+      />
+      <label for="email">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input
+        class="form-control"
+        id="description"
+        name="description"
+        type="text"
+        placeholder="name@example.com"
+      />
+      <label for="description">Description</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input
+        class="form-control"
+        id="job"
+        name="job"
+        type="text"
+        placeholder="name@example.com"
+      />
+      <label for="job">Your job</label>
+    </div>
+    <!-- Phone number input-->
+    <div class="form-floating mb-3">
+      <input
+        class="form-control"
+        id="phone"
+        name="phone"
+        type="tel"
+        placeholder="(123) 456-7890"
+      />
+      <label for="phone">Phone number</label>
+    </div>
+    <div class="form-control mb-3">
+      <input
+        type="file"
+        name="profile-file"
+      />
+      
+      
+    </div>
+
+    <!-- Submit Button-->
+    <button type="submit" id="button" class="btn btn-info btn-xl text-white">Add</button>
+  </div>
+</form>
+
+<%- include('partials/_footer') %>
